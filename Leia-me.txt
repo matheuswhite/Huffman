@@ -1,0 +1,1 @@
+Coloque a imagem bola.png na pasta build que será criada

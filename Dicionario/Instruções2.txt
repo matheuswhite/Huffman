@@ -1,0 +1,1 @@
+Pegar o Array/estrutura. Definir a frequencia. Ordernar

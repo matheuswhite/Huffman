@@ -1,0 +1,1 @@
+Leitura do arquivo e armazenamento num array ou outra estrutura

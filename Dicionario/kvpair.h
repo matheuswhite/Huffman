@@ -1,29 +1,20 @@
 #ifndef KVPAIR_H
 #define KVPAIR_H
 
-template <typename Key, typename E>
-class KVpair
+class No
 {
 private:
-    Key k;
-    E e;
+    No* left;
+    No* right;
+    bool leaf;
+    unsigned char content;
+    int frequencia;
 public:
-    KVpair(){}
-    KVpair(Key kval, E eval=0)
+    No(){}
+    No(unsigned char cont, int  freq, bool l)
     {
-        k = kval; e = eval;
+        frequencia = freq; content = cont; leaf = l;
     }
-    KVpair(const KVpair& o)
-    {
-        k = o.k; e = o.e;
-    }
-    void operator =(const KVpair& o) // Assignment operator
-    {
-        k = o.k; e = o.e;
-    }
-    Key key() { return k; }
-    void setKey(Key ink) { k = ink; }
-    E value() { return e; }
 };
 
 #endif // KVPAIR_H

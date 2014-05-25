@@ -1,5 +1,5 @@
-#ifndef KVPAIR_H
-#define KVPAIR_H
+#ifndef NO_H
+#define NO_H
 
 class No
 {
@@ -17,4 +17,4 @@ public:
     }
 };
 
-#endif // KVPAIR_H
+#endif // NO_H

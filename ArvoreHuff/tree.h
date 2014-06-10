@@ -149,6 +149,7 @@ public:
     }
 
     //pega o codigo de cada nó apartir da arvore e coloca numa string
+    //Mudar par o modelo anterior
     //Pronto
     //Falta testar
     std::string coding(No* node, std::string temp, unsigned char content)

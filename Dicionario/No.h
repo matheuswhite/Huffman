@@ -4,7 +4,7 @@
 #include <iostream>
 
 //Comentar o codigo!!
-
+//implementar o destrutor
 class No
 {
 private:
@@ -12,46 +12,64 @@ private:
     No* right;
     int frequencia;
     bool leaf;
-    bool find;
+    //bool find;
     std::string code;
     unsigned char content;
 
 public:
-    No() {}
+    No();
 
-    No(unsigned char cont, int  freq, bool l, const No& esq = 0, const No& dir = 0)
+    No(int  freq, bool l, unsigned char cont = 0)
     {
-        code = 0;
-        find = false;
+        code.clear();
+        //find = false;
         frequencia = freq;
         content = cont;
         leaf = l;
+        left = 0;
+        right = 0;
     }
 
     ~No() {}
 
-    void setCode()
+    void setCode(const std::string& codigo)
     {
-
+        code = codigo;
     }
     std::string getCode()
     {
+        return code;
+    }
 
+    /*
+    void setFind(bool con)
+    {
+        if(isLeaf() == false)
+        {
+            if(left->find == true && right->find == true)
+            {
+                find = con;
+            }
+        }
+        else
+        {
+            find = con;
+        }
     }
 
     bool getFind()
     {
-
-    }
+        return find;
+    }*/
 
     int getFrequencia()
     {
-
+        return frequencia;
     }
 
     unsigned char getContent()
     {
-
+        return content;
     }
 
     bool isLeaf()
@@ -59,6 +77,21 @@ public:
         return leaf;
     }
 
+    void setFilhos(No* esq, No* dir)
+    {
+        left = esq;
+        right = dir;
+    }
+
+    No* getLeftChild()
+    {
+        return left;
+    }
+
+    No* getRightChild()
+    {
+        return right;
+    }
 
 };
 

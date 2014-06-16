@@ -1,3 +1,0 @@
-Pegar o Array/estrutura e montar a arvore de huffman. 
-Montar o Array para a saída apartir da arvore de huffman.
-montar a arvore para ser escrita no arquivo.

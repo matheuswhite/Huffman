@@ -1,2 +1,0 @@
-Pegar o conteudo do array gerado pela arvore e escrever no arquivo.
-E escrever a arvore de huffman no arquivo
